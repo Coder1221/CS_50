@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BOOK REVIEW</title>
+    </head>
+    
+    <body>
+        
+        <div>
+            WELCOME {{ username }} to book review website made in python using Flask , SQL
+            <br>
+            AUTHOR:ABDUR REHMAN
+        </div>
+        
+        <div>
+            RESULTS OF SEARCHED OF BOOK
+        </div>
+    
+        <div>
+                ISBN => {{pass1[0][0]}} : BOOK NAME =>  {{pass1[0][1]}}  
+                <br>
+                AUTHOR NAME =>  {{pass1[0][2]}}  :   PUBLISHED YEAR =>  {{pass1[0][3]}}
+        </div>
+
+        <div>
+                AVERAGE RATING: {{response['books'][0]['average_rating']}}   <br>    
+                RATING COUNT : {{response['books'][0]['ratings_count']}}
+        </div>
+
+        <div>
+            SUBMIT A REVIEW ABOUT BOOK
+
+            <form action="{{ url_for('m2') }}" method="post">
+                <input type="text" name="name" placeholder="Enter Review about book">
+                
+                <form method="get" action="/next">
+                    <button type="submit">SIGN IN</button>
+                </form>
+                
+            </form>
+      
+
+
+        </div>>
+
+    </body>
+
+</html>

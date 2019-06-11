@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BOOK REVIEW</title>
+    </head>
+    
+    <body>
+        <div>
+            WELCOME to book review website made in python using Flask , SQL
+            <br>
+            AUTHOR:ABDUR REHMAN
+        </div>
+        
+        <form action="{{ url_for('m') }}" method="post">
+                <input type="text" name="name" placeholder="Enter Your userName">
+                <input type="text" name="name1" placeholder="Enter Your PASSWORD">
+                
+                <form method="get" action="/next">
+                    <button type="submit">SIGN IN</button>
+                </form>
+       
+        </form>
+      
+
+
+    </body>
+
+    <script>
+  
+    
+    </script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>BOOK REVIEW</title>
+    </head>
+    
+    <body>
+        
+        <div>
+            WELCOME {{ username }} to book review website made in python using Flask , SQL
+            <br>
+            AUTHOR:ABDUR REHMAN
+        </div>
+        
+        <div>
+            RESULTS OF SEARCHED OF BOOK
+        </div>
+
+        {% for name in passing %}
+
+            <form action="{{ url_for('m2') }}" method="post">
+                                    
+                    <button name="isbn" type="submit" value="{{name.isbn}}">                           
+                        <li>  {{name.title}}  </li>
+                    </button>
+
+            </form>    
+
+        {% endfor %}
+    </body>
+
+</html>
