@@ -1,0 +1,45 @@
+venus:~/cs471-programming/pa2/completed-code> simpleclient venus.lums.edu.pk 8963
+Running client... 
+Will try to connect to venus.lums.edu.pk at port 8963
+
+hostname: venus.lums.edu.pk has IP: 10.99.1.139
+
+.. creating local connector socket
+.. connecting socket to venus.lums.edu.pk:8963
+*****************************
+Welcome to SIMPLE server v0.1
+*****************************
+
+c: list
+s: file1.txt
+s: file2.txt
+s: file3.txt
+s: simpleclient
+s: simpleclient.cc
+s: simpleserver
+s: simpleserver.cc
+s: StringManip.h
+c: OS
+GNU/Linux	3.16.0-30-generic
+
+
+c: time
+The current local time at the server is: Wed Oct  7 06:29:40 2015
+
+
+c: hello
+command not available
+
+c: IP
+110.93.234.139 or 10.99.1.139	Someone really hardcoded this IP address!
+
+
+c: exit
+
+Alright... see you later!
+
+
+
+let's do this again sometime!
+
+venus:~/cs471-programming/pa2/completed-code>
